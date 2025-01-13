@@ -1,7 +1,8 @@
+import "../App.css"
 
 const Header = () => {
   return (
-    <header className="header">
+    <header>
       <h1>Weather Wise ⛅️</h1>
     </header>
   )

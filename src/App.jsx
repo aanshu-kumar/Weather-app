@@ -10,13 +10,14 @@ function App() {
   const [weatherDetails, setWeatherDetails] = useState(null);
 
   return (
-   <div>
+   <div className='app-container'>
     <Header/>
     <Search setWeatherDetails={setWeatherDetails}/>
-    {weatherDetails && <WeatherCard/>}
+    {weatherDetails && <WeatherCard weatherDetails={weatherDetails}/>}
+    {/* <WeatherCard weatherDetails={weatherDetails}/> */}
     <Footer/>
    </div>
-  )
+  )   
 }
 
 export default App

@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
 import PropTypes from 'prop-types';
+import "../App.css"
+
 
 const Search = ({setWeatherDetails}) => {
   const [search, setSearch] = useState("");
   return (
-    <div className="search-section">
       <div className="search-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +14,7 @@ const Search = ({setWeatherDetails}) => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-6 h-6"
+          width={"20px"}
         >
           <path
             strokeLinecap="round"
@@ -47,7 +48,7 @@ const Search = ({setWeatherDetails}) => {
           onChange={(e) => setSearch(e.target.value)}
         ></input>
       </div>
-    </div>
+
   );
 };
 Search.propTypes = {

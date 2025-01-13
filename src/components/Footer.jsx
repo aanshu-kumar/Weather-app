@@ -1,4 +1,5 @@
 import footer from "../assets/house.png"
+import "../App.css"
 const Footer = () => {
   return (
     <footer>
